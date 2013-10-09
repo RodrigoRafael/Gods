@@ -15,9 +15,9 @@
     <td><%= god.name %></td>
     <td><%= god.description %></td>
     <td><%= god.religion %></td>
-    <td><%= link_to 'Show', god %></td>
-    <td><%= link_to 'Edit', edit_god_path(god) %></td>
-    <td><%= link_to 'Destroy', god, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', god, id: "show_#{god.id}" %></td>
+    <td><%= link_to 'Edit', edit_god_path(god), id: "edit_#{god.id}" %></td>
+    <td><%= link_to 'Destroy', god, id: "destroy_#{god.id}", method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
