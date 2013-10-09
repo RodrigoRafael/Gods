@@ -13,8 +13,14 @@ module NavigationHelpers
 		when /the login page/
   			user_session_path
 
-  		when /the edit page/
+  		when /the create god page/
+  			new_god_path
+
+  		when /the edit gods page/
   			edit_god_path
+
+  		when /the destroy gods page/
+  			destroy_user_session_path
 		else
 
 		
