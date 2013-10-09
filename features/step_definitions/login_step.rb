@@ -9,3 +9,8 @@ end
 Then(/^I press the sign in button$/) do
   click_button "Sign in"
 end
+
+When /^I follow sign out$/ do
+  visit destroy_user_session_path
+end
+

@@ -1,6 +1,7 @@
 class GodsController < ApplicationController
   # GET /gods
   # GET /gods.json
+  before_filter :authenticate_user!
   def index
     @gods = God.all
 
