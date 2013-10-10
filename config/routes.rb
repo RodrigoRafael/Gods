@@ -1,10 +1,4 @@
 Blog::Application.routes.draw do
-  devise_for :users
-
-  resources :gods
-  root to: "gods#index"
-
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
